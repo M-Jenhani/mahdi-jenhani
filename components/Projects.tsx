@@ -197,7 +197,7 @@ const Projects = () => {
                     </a>
                   )}
                   {/* Conditionally render Demo link */}
-                  {![ 'EventHub — Full-Stack Event Management Platform', 'PosteMarket — E‑Commerce Marketplace', 'ProjectFlow — Project Management System', 'ServiceHub — Customer Service Management Platform', 'RemoteWork — Meetings & Milestones Manager'].includes(project.title) && (
+                  {![ 'PosteMarket — E‑Commerce Marketplace', 'ProjectFlow — Project Management System', 'ServiceHub — Customer Service Management Platform', 'RemoteWork — Meetings & Milestones Manager'].includes(project.title) && (
                     <a
                       href={project.demo}
                       target="_blank"
