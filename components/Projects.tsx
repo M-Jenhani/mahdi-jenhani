@@ -20,7 +20,7 @@ const Projects = () => {
     ],
     tags: ['Full-Stack', 'Event', 'Management', 'Spring Boot', 'Angular'],
     image: '🎟️',
-    imageUrl: null, // Add a screenshot path if you have one, e.g. '/screenshots/EventHub.png'
+    imageUrl: "/screenshots/eventhub.png", // Add a screenshot path if you have one, e.g. '/screenshots/EventHub.png'
     github: 'https://github.com/M-Jenhani/eventhub', // Replace with your actual repo if public
     demo: 'https://eventhub-demo25.vercel.app', // Add a live demo link if available
   },
