@@ -4,6 +4,27 @@ import { useEffect } from 'react';
 const Projects = () => {
   const projects = [
     {
+    title: 'EventHub — Full-Stack Event Management Platform',
+    description:
+      'Event management web app with role-based access, JWT auth, real-time notifications, RSVP with waitlists',
+    technologies: [
+      'Spring Boot',
+      'Java',
+      'Angular',
+      'TypeScript',
+      'Angular Material',
+      'Spring Security',
+      'WebSocket/STOMP',
+      'PostgreSQL',
+      'Docker'
+    ],
+    tags: ['Full-Stack', 'Event', 'Management', 'Spring Boot', 'Angular'],
+    image: '🎟️',
+    imageUrl: null, // Add a screenshot path if you have one, e.g. '/screenshots/EventHub.png'
+    github: 'https://github.com/M-Jenhani/eventhub', // Replace with your actual repo if public
+    demo: 'https://eventhub-demo25.vercel.app', // Add a live demo link if available
+  },
+    {
       title: 'MovieMate — Full-Stack Movie Recommendation Platform',
       description:
         'Hybrid recommendation engine combining content-based and collaborative filtering with a polished, responsive UI and full user management.',
@@ -23,7 +44,7 @@ const Projects = () => {
       image: '💬',
       imageUrl: '/screenshots/TalkFlow.png',
       github: 'https://github.com/M-Jenhani/TalkFlow',
-      demo: '#',
+      demo: 'https://talkflow-demo.vercel.app/',
     },
     {
       title: 'LeadSense — Insurance Lead Prioritization Dashboard',
@@ -34,7 +55,7 @@ const Projects = () => {
       image: '📈',
       imageUrl: '/screenshots/LeadSense.png',
       github: 'https://github.com/M-Jenhani/insurance_broker_dashboard',
-      demo: '#',
+      demo: 'https://insurance-broker-dashboard.onrender.com/',
     },
     {
       title: 'ServiceHub — Customer Service Management Platform',
@@ -176,7 +197,7 @@ const Projects = () => {
                     </a>
                   )}
                   {/* Conditionally render Demo link */}
-                  {!['PosteMarket — E‑Commerce Marketplace', 'ProjectFlow — Project Management System', 'ServiceHub — Customer Service Management Platform', 'RemoteWork — Meetings & Milestones Manager'].includes(project.title) && (
+                  {![ 'EventHub — Full-Stack Event Management Platform', 'PosteMarket — E‑Commerce Marketplace', 'ProjectFlow — Project Management System', 'ServiceHub — Customer Service Management Platform', 'RemoteWork — Meetings & Milestones Manager'].includes(project.title) && (
                     <a
                       href={project.demo}
                       target="_blank"
