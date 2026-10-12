@@ -1,6 +1,34 @@
 const Experience = () => {
   const experiences = [
     {
+      title: 'Software Developer',
+      organization: 'Linedata',
+      period: 'Aug 2026 – Present',
+      location: 'Tunis',
+      description:
+        'EKIP — End-to-End Financing & Leasing Software Solution',
+      link: 'https://www.linedata.com',
+      highlights: [
+        'Build new features and maintain EKIP, Linedata\'s end-to-end financing and leasing software solution',
+        'Develop on a Spring-based framework with an Angular front end, using PL/SQL for business logic and Maven for builds',
+        'Tech: Java, Spring, Angular, XML, PL/SQL, Maven, Tomcat, JBoss',
+      ],
+    },
+    {
+      title: 'AI Engineer Intern (Final Year Project)',
+      organization: 'Linedata',
+      period: 'Feb 2026 – Jul 2026',
+      location: 'Tunis',
+      description:
+        'EKIP API Assistant — AI Assistant for API Discovery & Chaining',
+      highlights: [
+        'Designed and built a RAG-based natural-language assistant helping integrators choose and chain the APIs of EKIP360',
+        'Used an LLM to enrich the documentation of 2,000+ APIs (FR/EN) and extracted a graph of 8,621 real API sequences from screen code',
+        'Built hybrid search (Sentence-BERT, FAISS, BM25), an API decision system with Human-in-the-Loop improvement, and LLM-as-a-Judge evaluation',
+        'Tech: Python, FastAPI, React, LLM, RAG, FAISS, Sentence-BERT, BM25',
+      ],
+    },
+    {
       title: 'Data Scientist Intern',
       organization: 'Cabinet Vital',
       period: 'Jul 2025 – Aug 2025',
@@ -60,7 +88,7 @@ const Experience = () => {
       institution: 'National Engineering School of Carthage (ENICarthage)',
       period: 'Sep 2023 – Jul 2026',
       location: 'Tunis',
-      description: 'Final-year student specializing in Software Engineering & Data Science / AI',
+      description: 'Graduated, specializing in Software Engineering & Data Science / AI',
     },
     {
       degree: 'National Degree in Information Technology',
@@ -112,7 +140,8 @@ const Experience = () => {
                   <p className="text-blue-400 mb-1">{exp.organization}</p>
                   <p className="text-gray-500 text-sm mb-3">{exp.period}</p>
                   <a
-                    href={`#${exp.description.split(' — ')[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}
+                    href={exp.link ?? `#${exp.description.split(' — ')[0].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}
+                    {...(exp.link ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                     className="text-gray-400 hover:text-blue-500 transition-colors mb-3 inline-block"
                   >
                     {exp.description}

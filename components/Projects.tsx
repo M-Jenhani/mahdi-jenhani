@@ -4,6 +4,17 @@ import { useEffect } from 'react';
 const Projects = () => {
   const projects = [
     {
+      title: 'EKIP API Assistant — AI Assistant for API Discovery & Chaining',
+      description:
+        'End-of-studies project at Linedata: a RAG-based natural-language assistant that helps integrators choose and chain EKIP360 APIs, with hybrid search, an API decision system, and a human-in-the-loop feedback workspace.',
+      technologies: ['Python', 'FastAPI', 'React', 'LLM', 'RAG', 'Sentence-BERT', 'FAISS', 'BM25', 'LLM-as-a-Judge'],
+      tags: ['RAG', 'LLM', 'AI', 'Full-Stack'],
+      image: '🤖',
+      imageUrl: null,
+      github: '#',
+      demo: '#',
+    },
+    {
     title: 'EventHub — Full-Stack Event Management Platform',
     description:
       'Event management web app with role-based access, JWT auth, real-time notifications, RSVP with waitlists',
@@ -33,7 +44,7 @@ const Projects = () => {
       image: '🎬',
       imageUrl: '/screenshots/MovieMate.png',
       github: 'https://github.com/M-Jenhani/movie-mate',
-      demo: '#',
+      demo: 'https://moviemate-demo25.vercel.app/',
     },
     {
       title: 'TalkFlow — Full-stack AI Chatbot',
@@ -55,7 +66,7 @@ const Projects = () => {
       image: '📈',
       imageUrl: '/screenshots/LeadSense.png',
       github: 'https://github.com/M-Jenhani/insurance_broker_dashboard',
-      demo: 'https://insurance-broker-dashboard.onrender.com/',
+      demo: 'https://leadsense-demo.onrender.com/',
     },
     {
       title: 'ServiceHub — Customer Service Management Platform',
@@ -98,7 +109,7 @@ const Projects = () => {
       tags: ['Management', 'CRUD', 'Desktop'],
       image: '🗂️',
       mediaUrl: '/screenshots/Java_project.mp4',
-      github: '#',
+      github: 'https://github.com/M-Jenhani/GestionTeleTravailV2',
       demo: '#',
     },
   ];
@@ -180,7 +191,7 @@ const Projects = () => {
                 </div>
                 <div className="flex gap-4">
                   {/* Conditionally render GitHub link */}
-                  {!['PosteMarket — E‑Commerce Marketplace', 'ProjectFlow — Project Management System', 'ServiceHub — Customer Service Management Platform'].includes(project.title) && (
+                  {!['EKIP API Assistant — AI Assistant for API Discovery & Chaining', 'PosteMarket — E‑Commerce Marketplace', 'ProjectFlow — Project Management System', 'ServiceHub — Customer Service Management Platform'].includes(project.title) && (
                     <a
                       href={project.github}
                       target="_blank"
@@ -197,7 +208,7 @@ const Projects = () => {
                     </a>
                   )}
                   {/* Conditionally render Demo link */}
-                  {![ 'PosteMarket — E‑Commerce Marketplace', 'ProjectFlow — Project Management System', 'ServiceHub — Customer Service Management Platform', 'RemoteWork — Meetings & Milestones Manager'].includes(project.title) && (
+                  {![ 'EKIP API Assistant — AI Assistant for API Discovery & Chaining', 'PosteMarket — E‑Commerce Marketplace', 'ProjectFlow — Project Management System', 'ServiceHub — Customer Service Management Platform', 'RemoteWork — Meetings & Milestones Manager'].includes(project.title) && (
                     <a
                       href={project.demo}
                       target="_blank"

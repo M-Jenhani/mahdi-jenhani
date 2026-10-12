@@ -45,9 +45,9 @@ const Contact = () => {
           Get In <span className="text-blue-500">Touch</span>
         </h2>
         <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
-          I'm currently looking for a PFE internship opportunity. Feel free to
-          reach out if you'd like to discuss potential opportunities or just
-          want to connect!
+          I'm currently a Software Developer at Linedata. Feel free to reach
+          out if you'd like to talk about AI, LLM-based tools, software
+          engineering, or just want to connect!
         </p>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -272,11 +272,10 @@ const Contact = () => {
             {/* Availability */}
             <div className="bg-gradient-to-br from-blue-500/20 to-purple-600/20 border border-blue-500 rounded-lg p-6">
               <h3 className="text-xl font-bold text-white mb-2">
-                📢 Available for PFE Internship
+                💼 Currently at Linedata
               </h3>
               <p className="text-gray-300">
-                I'm actively seeking an end-of-studies internship opportunity
-                starting in early 2025. Open to opportunities in Tunisia and internationally—willing to relocate for the right role. Let's connect!
+                I'm a Software Developer at Linedata in Tunis, working on EKIP. I'm always happy to connect with people working on AI, LLM-based tools, and software engineering. Let's connect!
               </p>
             </div>
           </div>

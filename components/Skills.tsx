@@ -2,11 +2,11 @@ const Skills = () => {
   const categories = [
     {
       title: 'Core Stack',
-      items: ['React', 'Next.js', 'TypeScript', 'Node.js', 'Express.js', 'FastAPI', 'Python', 'Angular', 'Spring Boot'],
+      items: ['React', 'Next.js', 'TypeScript', 'Node.js', 'Express.js', 'FastAPI', 'Python', 'Angular', 'Java', 'Spring Boot', 'Spring Framework', 'XML'],
     },
     {
       title: 'Data / ML',
-      items: ['PyTorch', 'scikit-learn', 'Pandas', 'NumPy', 'Streamlit', 'Plotly', 'Hugging Face', 'sentence-transformers', 'ChromaDB'],
+      items: ['PyTorch', 'scikit-learn', 'Pandas', 'NumPy', 'Streamlit', 'Plotly', 'Hugging Face', 'sentence-transformers', 'ChromaDB', 'FAISS', 'BM25', 'LLMs'],
     },
     {
       title: 'Databases',
@@ -14,11 +14,11 @@ const Skills = () => {
     },
     {
       title: 'DevOps / Tools',
-      items: ['Docker', 'Git/GitHub', 'Jira', 'AWS (Cloud Practitioner)'],
+      items: ['Docker', 'Git/GitHub', 'Maven', 'Tomcat', 'JBoss', 'Jira', 'AWS (Cloud Practitioner)'],
     },
     {
       title: 'Concepts',
-      items: ['RAG', 'REST APIs', 'MVC / OOP', 'JWT / Auth'],
+      items: ['RAG', 'Hybrid Search', 'LLM-as-a-Judge', 'CRISP-DM', 'REST APIs', 'MVC / OOP', 'JWT / Auth'],
     },
   ];
 

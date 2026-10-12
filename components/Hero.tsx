@@ -51,10 +51,10 @@ const Hero = () => {
             Hi, I'm <span className="text-blue-500">Mahdi Jenhani</span>
           </h1>
           <h2 className="text-2xl md:text-4xl text-gray-300 mb-8">
-            Software Engineer & Data Science / AI Enthusiast
+            Software Developer at Linedata
           </h2>
           <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-3xl mx-auto">
-            Motivated final-year Software Engineer & Data Science / AI enthusiast at ENICarthage, seeking an end-of-studies internship (PFE) to apply my skills and contribute to innovative projects.
+            Software Developer at Linedata, building and maintaining EKIP, an end-to-end financing and leasing software solution. ENICarthage Computer Engineering graduate with a passion for AI, LLM-based tools, and the full software development lifecycle.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
